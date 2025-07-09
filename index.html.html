@@ -1,0 +1,1464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+<link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"/>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>GS Consultancy | Accounting & Tax Services in Tinsukia</title>
+<meta name="description" content="GS Consultancy offers professional accounting, ITR filing, GST services, tax consultancy, and financial project reports in Tinsukia, Assam." />
+<meta name="keywords" content="accounting services, tax consultancy, GST services, ITR filing, financial reports, Tinsukia, Assam" />
+<meta name="author" content="GS Consultancy" />
+<link rel="icon" href="https://picsum.photos/seed/gsconsultancy/32/32.jpg" type="image/x-icon">
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<a href="#submit-review" class="hover:text-blue-600">Write a Review</a>
+<style>
+.hero-bg {
+background-image: url('https://picsum.photos/seed/consulting/1600/900.jpg');
+background-size: cover;
+background-position: center;
+}
+.whatsapp-float {
+position: fixed;
+bottom: 20px;
+right: 20px;
+background-color: #25D366;
+color: white;
+border-radius: 50%;
+padding: 16px;
+box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+z-index: 1000;
+transition: all 0.3s ease;
+}
+.whatsapp-float:hover {
+transform: scale(1.1);
+background-color: #1ebe5d;
+}
+.service-icon {
+width: 40px;
+height: 40px;
+transition: transform 0.3s ease;
+}
+.service-icon:hover {
+transform: scale(1.1);
+}
+.fade-in-up {
+animation: fadeInUp 0.8s ease-out forwards;
+opacity: 0;
+}
+@keyframes fadeInUp {
+0% { opacity: 0; transform: translateY(20px); }
+100% { opacity: 1; transform: translateY(0); }
+}
+.service-card {
+transition: all 0.3s ease;
+}
+.service-card:hover {
+transform: translateY(-5px);
+box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+.tab-content {
+display: none;
+}
+.tab-content.active {
+display: block;
+}
+.modal {
+transition: opacity 0.3s ease;
+}
+.back-to-top {
+transition: all 0.3s ease;
+opacity: 0;
+visibility: hidden;
+}
+.back-to-top.visible {
+opacity: 1;
+visibility: visible;
+}
+</style>
+</head>
+<body class="text-gray-800 font-sans bg-gray-50">
+<!-- Preloader -->
+<div id="preloader" class="fixed inset-0 bg-white z-50 flex items-center justify-center">
+<div class="text-center">
+<img src="https://tse4.mm.bing.net/th/id/OIP.u09BRnR8dFnUd6n_EWVSrgHaEU?pid=Api&P=0&h=180" alt="GS Consultancy Logo" class="w-20 h-20 mx-auto mb-4 rounded-full">
+<h2 class="text-2xl font-bold text-blue-800">GS Consultancy</h2>
+<div class="w-16 h-1 bg-blue-600 mx-auto mt-3 rounded-full"></div>
+</div>
+</div>
+<!-- Sticky Navbar -->
+<header class="bg-white shadow-md sticky top-0 z-50 transition-all duration-300" id="navbar">
+<div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+<div class="flex items-center space-x-2">
+<img src="https://housing.com/news/wp-content/uploads/2023/02/Benefits-of-hiring-a-tax-consultant-f.jpg" alt="GS Consultancy Logo" class="w-10 h-10 rounded-full">
+<h1 class="text-xl font-bold text-blue-800">GS Consultancy</h1>
+</div>
+<button id="menu-toggle" class="md:hidden text-gray-700 focus:outline-none">
+<i class="fas fa-bars text-2xl"></i>
+</button>
+<nav class="hidden md:flex space-x-8 text-gray-700 font-medium items-center">
+<a href="#home" class="hover:text-blue-600 transition-colors">Home</a>
+<a href="#about" class="hover:text-blue-600 transition-colors">About</a>
+<a href="#services" class="hover:text-blue-600 transition-colors">Services</a>
+<a href="#team" class="hover:text-blue-600 transition-colors">Team</a>
+<a href="#testimonials" class="hover:text-blue-600 transition-colors">Reviews</a>
+<a href="#contact" class="hover:text-blue-600 transition-colors">Contact</a>
+<a href="#" class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition-colors">Book Consultation</a>
+</nav>
+</div>
+<!-- Mobile Menu -->
+<div id="mobile-menu" class="md:hidden hidden bg-white shadow-md px-4 py-3 pb-4">
+<a href="#home" class="block py-2 text-gray-700 hover:text-blue-600 transition-colors">Home</a>
+<a href="#about" class="block py-2 text-gray-700 hover:text-blue-600 transition-colors">About</a>
+<a href="#services" class="block py-2 text-gray-700 hover:text-blue-600 transition-colors">Services</a>
+<a href="#team" class="block py-2 text-gray-700 hover:text-blue-600 transition-colors">Team</a>
+<a href="#testimonials" class="block py-2 text-gray-700 hover:text-blue-600 transition-colors">Reviews</a>
+<a href="#contact" class="block py-2 text-gray-700 hover:text-blue-600 transition-colors">Contact</a>
+<a href="#" class="block mt-3 bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition-colors text-center">Book Consultation</a>
+</div>
+</header>
+<!-- Hero Section -->
+<section id="home" class="hero-bg text-white py-32 text-center relative">
+<div class="absolute inset-0 bg-black bg-opacity-50"></div>
+<div class="relative bg-black bg-opacity-50 p-10 rounded max-w-4xl mx-auto">
+<h2 class="text-4xl md:text-5xl font-bold mb-4">Reliable Accounting & Tax Consultancy</h2>
+<p class="text-lg md:text-xl mb-8">Serving Tinsukia and Northeast India with expert financial solutions.</p>
+<div class="flex flex-col sm:flex-row justify-center gap-4">
+<a href="#contact" class="bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700 transition-colors">Contact Us</a>
+<a href="#services" class="bg-transparent border-2 border-white text-white px-6 py-3 rounded hover:bg-white hover:text-blue-800 transition-colors">View Services</a>
+</div>
+</div>
+</section>
+<!-- About -->
+<section id="about" class="py-16 px-6 max-w-6xl mx-auto text-center" data-aos="fade-up" data-aos-delay="100">
+<h3 class="text-3xl font-bold text-blue-900 mb-8">About GS Consultancy</h3>
+<div class="flex flex-col md:flex-row items-center gap-10">
+<div class="md:w-1/2" data-aos="fade-right" data-aos-delay="150">
+<img src="https://thumbs.dreamstime.com/b/accounting-accountancy-banking-calculation-business-finance-concept-140258583.jpg" alt="GS Consultancy Team" class="rounded-lg shadow-lg w-full">
+</div>
+<div class="md:w-1/2" data-aos="fade-left" data-aos-delay="200">
+<p class="text-lg text-gray-700 mb-6">
+We provide comprehensive financial and tax services including ITR filing, GST compliance, bookkeeping, and project reporting. With personalized support and deep industry knowledge, we help our clients stay compliant and grow with confidence.
+</p>
+<p class="text-lg text-gray-700 mb-6">
+Located in Tinsukia, Assam, we've been serving businesses and individuals in Northeast India since 2015. Our team of experienced professionals is dedicated to providing accurate, timely, and cost-effective financial solutions.
+</p>
+<div class="flex flex-wrap justify-center gap-4">
+<div class="flex items-center gap-2">
+<i class="fas fa-check-circle text-green-500"></i>
+<span>10+ Years Experience</span>
+</div>
+<div class="flex items-center gap-2">
+<i class="fas fa-check-circle text-green-500"></i>
+<span>100+ Clients</span>
+</div>
+<div class="flex items-center gap-2">
+<i class="fas fa-check-circle text-green-500"></i>
+<span>99% Accuracy Rate</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Services -->
+<section id="services" class="py-20 bg-gray-50 px-6">
+<div class="max-w-7xl mx-auto">
+<h3 class="text-3xl font-bold text-center text-blue-800 mb-4">Our Core Services</h3>
+<p class="text-lg text-gray-600 text-center mb-12 max-w-3xl mx-auto">
+We offer a comprehensive range of financial services to help your business thrive. From tax compliance to financial planning, we've got you covered.
+</p>
+
+<!-- Service Tabs -->
+<div class="mb-12">
+<div class="flex flex-wrap justify-center gap-2 mb-8">
+<button class="service-tab active bg-blue-600 text-white px-6 py-2 rounded-full" data-tab="tab1">
+<i class="fas fa-calculator mr-2"></i>Accounting & Bookkeeping
+</button>
+<button class="service-tab bg-white text-gray-700 px-6 py-2 rounded-full hover:bg-blue-50 transition-colors" data-tab="tab2">
+<i class="fas fa-file-invoice-dollar mr-2"></i>Tax & GST Services
+</button>
+<button class="service-tab bg-white text-gray-700 px-6 py-2 rounded-full hover:bg-blue-50 transition-colors" data-tab="tab3">
+<i class="fas fa-chart-line mr-2"></i>Financial Reports
+</button>
+<button class="service-tab bg-white text-gray-700 px-6 py-2 rounded-full hover:bg-blue-50 transition-colors" data-tab="tab4">
+<i class="fas fa-building mr-2"></i>Business Setup
+</button>
+</div>
+
+<div class="tab-content active" id="tab1">
+<div class="grid md:grid-cols-3 gap-8">
+<div class="service-card bg-white p-6 rounded-lg shadow-sm">
+<div class="flex items-center gap-4 mb-4">
+<img src="https://cdn-icons-png.flaticon.com/512/1250/1250614.png" class="service-icon" alt="Accounting">
+<h4 class="font-semibold text-lg">Accounting & Bookkeeping</h4>
+</div>
+<p class="text-gray-600 mb-4">Accurate and efficient financial record maintenance for your business.</p>
+<ul class="text-gray-600 space-y-2">
+<li class="flex items-start gap-2">
+<i class="fas fa-check text-green-500 mt-1"></i>
+<span>Daily, weekly, and monthly bookkeeping</span>
+</li>
+<li class="flex items-start gap-2">
+<i class="fas fa-check text-green-500 mt-1"></i>
+<span>Financial statement preparation</span>
+</li>
+<li class="flex items-start gap-2">
+<i class="fas fa-check text-green-500 mt-1"></i>
+<span>Cash flow management</span>
+</li>
+</ul>
+</div>
+<div class="service-card bg-white p-6 rounded-lg shadow-sm">
+<div class="flex items-center gap-4 mb-4">
+<img src="https://cdn-icons-png.flaticon.com/512/3135/3135706.png" class="service-icon" alt="ITR Filing">
+<h4 class="font-semibold text-lg">ITR Filing</h4>
+</div>
+<p class="text-gray-600 mb-4">Timely filing of income tax returns for individuals and entities.</p>
+<ul class="text-gray-600 space-y-2">
+<li class="flex items-start gap-2">
+<i class="fas fa-check text-green-500 mt-1"></i>
+<span>Individual, HUF, and partnership returns</span>
+</li>
+<li class="flex items-start gap-2">
+<i class="fas fa-check text-green-500 mt-1"></i>
+<span>Corporate tax returns</span>
+</li>
+<li class="flex items-start gap-2">
+<i class="fas fa-check text-green-500 mt-1"></i>
+<span>Tax audits</span>
+</li>
+</ul>
+</div>
+<div class="service-card bg-white p-6 rounded-lg shadow-sm">
+<div class="flex items-center gap-4 mb-4">
+<img src="https://cdn-icons-png.flaticon.com/512/2847/2847235.png" class="service-icon" alt="GST Services">
+<h4 class="font-semibold text-lg">GST Services</h4>
+</div>
+<p class="text-gray-600 mb-4">Registration, monthly/quarterly returns, and GST advisory.</p>
+<ul class="text-gray-600 space-y-2">
+<li class="flex items-start gap-2">
+<i class="fas fa-check text-green-500 mt-1"></i>
+<span>Registration and renewal</span>
+</li>
+<li class="flex items-start gap-2">
+<i class="fas fa-check text-green-500 mt-1"></i>
+<span>Monthly and quarterly returns</span>
+</li>
+<li class="flex items-start gap-2">
+<i class="fas fa-check text-green-500 mt-1"></i>
+<span>Input tax credit management</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div class="tab-content" id="tab2">
+<div class="grid md:grid-cols-3 gap-8">
+<div class="service-card bg-white p-6 rounded-lg shadow-sm">
+<div class="flex items-center gap-4 mb-4">
+<img src="https://cdn-icons-png.flaticon.com/512/3588/3588514.png" class="service-icon" alt="Tax Consultancy">
+<h4 class="font-semibold text-lg">Tax Consultancy</h4>
+</div>
+<p class="text-gray-600 mb-4">Tax planning and advisory to help reduce liability legally.</p>
+<ul class="text-gray-600 space-y-2">
+<li class="flex items-start gap-2">
+<i class="fas fa-check text-green-500 mt-1"></i>
+<span>Tax planning and optimization</span>
+</li>
+<li class="flex items-start gap-2">
+<i class="fas fa-check text-green-500 mt-1"></i>
+<span>Capital gains tax advisory</span>
+</li>
+<li class="flex items-start gap-2">
+<i class="fas fa-check text-green-500 mt-1"></i>
+<span>Tax dispute resolution</span>
+</li>
+</ul>
+</div>
+<div class="service-card bg-white p-6 rounded-lg shadow-sm">
+<div class="flex items-center gap-4 mb-4">
+<img src="https://cdn-icons-png.flaticon.com/512/2910/2910791.png" class="service-icon" alt="Project Reports">
+<h4 class="font-semibold text-lg">Bank Project Reports</h4>
+</div>
+<p class="text-gray-600 mb-4">Loan-ready reports tailored for banks and funding institutions.</p>
+<ul class="text-gray-600 space-y-2">
+<li class="flex items-start gap-2">
+<i class="fas fa-check text-green-500 mt-1"></i>
+<span>Project feasibility studies</span>
+</li>
+<li class="flex items-start gap-2">
+<i class="fas fa-check text-green-500 mt-1"></i>
+<span>Financial projections</span>
+</li>
+<li class="flex items-start gap-2">
+<i class="fas fa-check text-green-500 mt-1"></i>
+<span>Loan application assistance</span>
+</li>
+</ul>
+</div>
+<div="service-card bg-white p-6 rounded-lg shadow-sm">
+<div class="flex items-center gap-4 mb-4">
+<img src="https://cdn-icons-png.flaticon.com/512/3075/3075977.png" class="service-icon" alt="Business Services">
+<h4 class="font-semibold text-lg">Other Business Services</h4>
+</div>
+<p class="text-gray-600 mb-4">MSME registration, PAN/TAN, DSC & audit coordination.</p>
+<ul class="text-gray-600 space-y-2">
+<li class="flex items-start gap-2">
+<i class="fas fa-check text-green-500 mt-1"></i>
+<span>MSME registration</span>
+</li>
+<li class="flex items-start gap-2">
+<i class="fas fa-check text-green-500 mt-1"></i>
+<span>PAN and TAN application</span>
+</li>
+<li class="flex items-start gap-2">
+<i class="fas fa-check text-green-500 mt-1"></i>
+<span>Digital Signature Certificate</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div class="tab-content" id="tab3">
+<div class="grid md:grid-cols-3 gap-8">
+<div class="service-card bg-white p-6 rounded-lg shadow-sm">
+<div class="flex items-center gap-4 mb-4">
+<img src="https://cdn-icons-png.flaticon.com/512/3135/3135706.png" class="service-icon" alt="ITR Filing">
+<h4 class="font-semibold text-lg">Financial Statement Preparation</h4>
+</div>
+<p class="text-gray-600 mb-4">Comprehensive financial statements for your business.</p>
+<ul class="text-gray-600 space-y-2">
+<li class="flex items-start gap-2">
+<i class="fas fa-check text-green-500 mt-1"></i>
+<span>Balance sheets and profit/loss statements</span>
+</li>
+<li class="flex items-start gap-2">
+<i class="fas fa-check text-green-500 mt-1"></i>
+<span>Cash flow statements</span>
+</li>
+<li class="flex items-start gap-2">
+<i class="fas fa-check text-green-500 mt-1"></i>
+<span>Financial ratio analysis</span>
+</li>
+</ul>
+</div>
+<div class="service-card bg-white p-6 rounded-lg shadow-sm">
+<div class="flex items-center gap-4 mb-4">
+<img src="https://cdn-icons-png.flaticon.com/512/2847/2847235.png" class="service-icon" alt="GST Services">
+<h4 class="font-semibold text-lg">Budgeting & Forecasting</h4>
+</div>
+<p class="text-gray-600 mb-4">Strategic financial planning for business growth.</p>
+<ul class="text-gray-600 space-y-2">
+<li class="flex items-start gap-2">
+<i class="fas fa-check text-green-500 mt-1"></i>
+<span>Annual budget preparation</span>
+</li>
+<li class="flex items-start gap-2">
+<i class="fas fa-check text-green-500 mt-1"></i>
+<span>Financial forecasting</span>
+</li>
+<li class="flex items-start gap-2">
+<i class="fas fa-check text-green-500 mt-1"></i>
+<span>Variance analysis</span>
+</li>
+</ul>
+</div>
+<div class="service-card bg-white p-6 rounded-lg shadow-sm">
+<div class="flex items-center gap-4 mb-4">
+<img src="https://cdn-icons-png.flaticon.com/512/3588/3588514.png" class="service-icon" alt="Tax Consultancy">
+<h4 class="font-semibold text-lg">Financial Analysis</h4>
+</div>
+<p class="text-gray-600 mb-4">In-depth analysis to improve your business performance.</p>
+<ul class="text-gray-600 space-y-2">
+<li class="flex items-start gap-2">
+<i class="fas fa-check text-green-500 mt-1"></i>
+<span>Cost analysis</span>
+</li>
+<li class="flex items-start gap-2">
+<i class="fas fa-check text-green-500 mt-1"></i>
+<span>Return on investment analysis</span>
+</li>
+<li class="flex items-start gap-2">
+<i class="fas fa-check text-green-500 mt-1"></i>
+<span>Break-even analysis</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div class="tab-content" id="tab4">
+<div class="grid md:grid-cols-3 gap-8">
+<div class="service-card bg-white p-6 rounded-lg shadow-sm">
+<div class="flex items-center gap-4 mb-4">
+<img src="https://cdn-icons-png.flaticon.com/512/3075/3075977.png" class="service-icon" alt="Business Services">
+<h4 class="font-semibold text-lg">Business Registration</h4>
+</div>
+<p class="text-gray-600 mb-4">Setup your business with proper legal documentation.</p>
+<ul class="text-gray-600 space-y-2">
+<li class="flex items-start gap-2">
+<i class="fas fa-check text-green-500 mt-1"></i>
+<span>Company incorporation</span>
+</li>
+<li class="flex items-start gap-2">
+<i class="fas fa-check text-green-500 mt-1"></i>
+<span>Partnership firm registration</span>
+</li>
+<li class="flex items-start gap-2">
+<i class="fas fa-check text-green-500 mt-1"></i>
+<span>LLP registration</span>
+</li>
+</ul>
+</div>
+<div class="service-card bg-white p-6 rounded-lg shadow-sm">
+<div class="flex items-center gap-4 mb-4">
+<img src="https://cdn-icons-png.flaticon.com/512/2910/2910791.png" class="service-icon" alt="Project Reports">
+<h4 class="font-semibold text-lg">Business Advisory</h4>
+</div>
+<p class="text-gray-600 mb-4">Strategic guidance for business growth and compliance.</p>
+<ul class="text-gray-600 space-y-2">
+<li class="flex items-start gap-2">
+<i class="fas fa-check text-green-500 mt-1"></i>
+<span>Business restructuring</span>
+</li>
+<li class="flex items-start gap-2">
+<i class="fas fa-check text-green-500 mt-1"></i>
+<span>Succession planning</span>
+</li>
+<li class="flex items-start gap-2">
+<i class="fas fa-check text-green-500 mt-1"></i>
+<span>Exit planning</span>
+</li>
+</ul>
+</div>
+<div class="service-card bg-white p-6 rounded-lg shadow-sm">
+<div class="flex items-center gap-4 mb-4">
+<img src="https://cdn-icons-png.flaticon.com/512/1250/1250614.png" class="service-icon" alt="Accounting">
+<h4 class="font-semibold text-lg">Accounting System Setup</h4>
+</div>
+<p class="text-gray-600 mb-4">Implement efficient accounting processes for your business.</p>
+<ul class="text-gray-600 space-y-2">
+<li class="flex items-start gap-2">
+<i class="fas fa-check text-green-500 mt-1"></i>
+<span>Accounting software implementation</span>
+</li>
+<li class="flex items-start gap-2">
+<i class="fas fa-check text-green-500 mt-1"></i>
+<span>Chart of accounts setup</span>
+</li>
+<li class="flex items-start gap-2">
+<i class="fas fa-check text-green-500 mt-1"></i>
+<span>Internal control systems</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Team -->
+<section id="team" class="py-20 bg-white px-6">
+<div class="max-w-7xl mx-auto">
+<h3 class="text-3xl font-bold text-center text-blue-900 mb-4">Our Expert Team</h3>
+<p class="text-lg text-gray-600 text-center mb-12 max-w-3xl mx-auto">
+Meet our dedicated professionals who bring years of experience and expertise to serve your financial needs.
+</p>
+
+<div class="grid md:grid-cols-4 gap-8">
+<div class="text-center">
+<div class="mb-4 mx-auto relative">
+<img src="Team1.jpg.jpeg" alt="Team Member" class="w-36 h-36 rounded-full object-cover mx-auto border-4 border-blue-100">
+<div class="absolute -bottom-2 left-1/2 transform -translate-x-1/2 bg-blue-600 text-white text-xs px-3 py-1 rounded-full">
+Founder & CEO
+</div>
+</div>
+<h4 class="font-semibold text-lg mb-1">Gobind Agarwal</h4>
+<p class="text-gray-600 text-sm mb-3">10+ Years Experience</p>
+<p class="text-gray-700 text-sm mb-3"> Accountant with extensive experience in taxation,project report and business advisory.</p>
+<div class="flex justify-center gap-2">
+<a href="#" class="text-blue-600 hover:text-blue-800"><i class="fab fa-linkedin"></i></a>
+<a href="#" class="text-blue-600 hover:text-blue-800"><i class="fab fa-twitter"></i></a>
+<a href="#" class="text-blue-600 hover:text-blue-800"><i class="fas fa-envelope"></i></a>
+</div>
+</div>
+<div class="text-center">
+<div class="mb-4 mx-auto relative">
+<img src="team3.jpg.jpeg" alt="Team Member" class="w-36 h-36 rounded-full object-cover mx-auto border-4 border-blue-100">
+<div class="absolute -bottom-2 left-1/2 transform -translate-x-1/2 bg-blue-600 text-white text-xs px-3 py-1 rounded-full">
+Tax Expert
+</div>
+</div>
+<h4 class="font-semibold text-lg mb-1">Bijay Sharma</h4>
+<p class="text-gray-600 text-sm mb-3">6 Years Experience</p>
+<p class="text-gray-700 text-sm mb-3">Experienced in tally and data entry</p>
+<div class="flex justify-center gap-2">
+<a href="#" class="text-blue-600 hover:text-blue-800"><i class="fab fa-linkedin"></i></a>
+<a href="#" class="text-blue-600 hover:text-blue-800"><i class="fab fa-twitter"></i></a>
+<a href="#" class="text-blue-600 hover:text-blue-800"><i class="fas fa-envelope"></i></a>
+</div>
+</div>
+<div class="text-center">
+<div class="mb-4 mx-auto relative">
+<img src="Team2.jpg.jpeg" alt="Team Member" class="w-36 h-36 rounded-full object-cover mx-auto border-4 border-blue-100">
+<div class="absolute -bottom-2 left-1/2 transform -translate-x-1/2 bg-blue-600 text-white text-xs px-3 py-1 rounded-full">
+Financial Analyst
+</div>
+</div>
+<h4 class="font-semibold text-lg mb-1">Tikaram Sharma</h4>
+<p class="text-gray-600 text-sm mb-3">6 Years Experience</p>
+<p class="text-gray-700 text-sm mb-3">Experienced in tally and data entry</p>
+<div class="flex justify-center gap-2">
+<a href="#" class="text-blue-600 hover:text-blue-800"><i class="fab fa-linkedin"></i></a>
+<a href="#" class="text-blue-600 hover:text-blue-800"><i class="fab fa-twitter"></i></a>
+<a href="#" class="text-blue-600 hover:text-blue-800"><i class="fas fa-envelope"></i></a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials Section -->
+<section id="testimonials" class="py-20 bg-gray-50 px-6">
+<div class="max-w-5xl mx-auto text-center">
+<h3 class="text-3xl font-bold text-blue-900 mb-10">What Our Clients Say</h3>
+<div class="grid md:grid-cols-2 gap-8">
+<div class="bg-white p-6 rounded shadow hover:shadow-md transition-all duration-300 transform hover:-translate-y-1">
+<div class="flex items-start gap-4">
+<img src="https://picsum.photos/seed/client1/70/70.jpg" alt="Client" class="w-14 h-14 rounded-full object-cover">
+<div>
+<p class="text-gray-700 italic mb-2">"GS Consultancy handled our taxes quickly and professionally. Highly recommend!"</p>
+<p class="font-semibold text-blue-800">— Priya S., Small Business Owner</p>
+<div class="flex text-yellow-400 mt-2">
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-white p-6 rounded shadow hover:shadow-md transition-all duration-300 transform hover:-translate-y-1">
+<div class="flex items-start gap-4">
+<img src="https://picsum.photos/seed/client2/70/70.jpg" alt="Client" class="w-14 h-14 rounded-full object-cover">
+<div>
+<p class="text-gray-700 italic mb-2">"The best place for GST filing and project reports in Tinsukia. Friendly and expert team."</p>
+<p class="font-semibold text-blue-800">— Ramesh K., Entrepreneur</p>
+<div class="flex text-yellow-400 mt-2">
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star-half-alt"></i>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-white p-6 rounded shadow hover:shadow-md transition-all duration-300 transform hover:-translate-y-1">
+<div class="flex items-start gap-4">
+<img src="https://picsum.photos/seed/client3/70/70.jpg" alt="Client" class="w-14 h-14 rounded-full object-cover">
+<div>
+<p class="text-gray-700 italic mb-2">"Their tax advisory saved us thousands of rupees in taxes. Very professional service!"</p>
+<p class="font-semibold text-blue-800">— Anil Mehta, Business Owner</p>
+<div class="flex text-yellow-400 mt-2">
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-white p-6 rounded shadow hover:shadow-md transition-all duration-300 transform hover:-translate-y-1">
+<div class="flex items-start gap-4">
+<img src="https://picsum.photos/seed/client4/70/70.jpg" alt="Client" class="w-14 h-14 rounded-full object-cover">
+<div>
+<p class="text-gray-700 italic mb-2">"Excellent service for our startup. Helped us with all the registrations and financial setup."</p>
+<p class="font-semibold text-blue-800">— Neha Jain, Startup Founder</p>
+<div class="flex text-yellow-400 mt-2">
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Reviews</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-50">
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Reviews</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-50">
+   <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Reviews</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-50">
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Reviews</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Review Submission Form -->
+    <section class="py-16 bg-gradient-to-r from-blue-900 to-blue-700 px-6">
+        <div class="max-w-3xl mx-auto text-center">
+            <h2 class="text-4xl font-bold text-white mb-8">Share Your Experience</h2>
+            <form id="reviewForm" class="bg-white rounded-lg shadow-lg p-8">
+                <div class="mb-6">
+                    <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Your Name*</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required
+                        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+                
+                <div class="mb-6">
+                    <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Your Email*</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required
+                        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+                
+                <div class="mb-6">
+                    <label class="block text-gray-700 text-sm font-bold mb-2">Rating*</label>
+                    <div class="flex items-center space-x-1 text-2xl" id="ratingStars">
+                        <i class="far fa-star text-yellow-400 cursor-pointer hover:text-yellow-500" data-rating="1"></i>
+                        <i class="far fa-star text-yellow-400 cursor-pointer hover:text-yellow-500" data-rating="2"></i>
+                        <i class="far fa-star text-yellow-400 cursor-pointer hover:text-yellow-500" data-rating="3"></i>
+                        <i class="far fa-star text-yellow-400 cursor-pointer hover:text-yellow-500" data-rating="4"></i>
+                        <i class="far fa-star text-yellow-400 cursor-pointer hover:text-yellow-500" data-rating="5"></i>
+                    </div>
+                    <input type="hidden" id="rating" name="rating" value="0" required>
+                </div>
+                
+                <div class="mb-6">
+                    <label for="message" class="block text-gray-700 text-sm font-bold mb-2">Your Review*</label>
+                    <div class="relative">
+                        <textarea id="message" name="message" placeholder="Share your experience with us..." required
+                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none"
+                            rows="5" maxlength="500"></textarea>
+                        <div id="charCounter" class="absolute bottom-2 right-3 text-sm text-gray-500">0/500</div>
+                    </div>
+                </div>
+                
+                <button type="submit" id="submitBtn" 
+                    class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300 transform hover:scale-105">
+                    <span id="submitText">Submit Review</span>
+                    <span id="loadingSpinner" class="hidden">
+                        <i class="fas fa-spinner fa-spin"></i> Submitting...
+                    </span>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Live Reviews Section -->
+    <section id="live-reviews" class="py-16 bg-white px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-12">
+                <h3 class="text-4xl font-bold text-blue-900 mb-4">Live Client Reviews</h3>
+                <p class="text-gray-600 mb-8">See what our clients are saying about us</p>
+                
+                <div class="flex flex-wrap justify-center gap-4 mb-8">
+                    <select id="filterRating" class="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        <option value="all">All Ratings</option>
+                        <option value="5">5 Stars</option>
+                        <option value="4">4 Stars</option>
+                        <option value="3">3 Stars</option>
+                        <option value="2">2 Stars</option>
+                        <option value="1">1 Star</option>
+                    </select>
+                    
+                    <select id="sortOrder" class="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        <option value="newest">Newest First</option>
+                        <option value="oldest">Oldest First</option>
+                        <option value="highest">Highest Rated</option>
+                        <option value="lowest">Lowest Rated</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div id="reviewList" class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="text-center text-gray-500 py-12 col-span-full">
+                    <i class="fas fa-spinner fa-spin text-3xl mb-4"></i>
+                    <p>Loading reviews...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Rating functionality
+        const ratingStars = document.querySelectorAll('#ratingStars i');
+        const ratingInput = document.getElementById('rating');
+        
+        ratingStars.forEach(star => {
+            star.addEventListener('click', () => {
+                const rating = parseInt(star.getAttribute('data-rating'));
+                ratingInput.value = rating;
+                
+                // Update star display
+                ratingStars.forEach((s, index) => {
+                    if (index < rating) {
+                        s.className = 'fas fa-star text-yellow-400 cursor-pointer';
+                    } else {
+                        s.className = 'far fa-star text-yellow-400 cursor-pointer';
+                    }
+                });
+            });
+            
+            star.addEventListener('mouseover', () => {
+                const rating = parseInt(star.getAttribute('data-rating'));
+                
+                ratingStars.forEach((s, index) => {
+                    if (index < rating) {
+                        s.className = 'fas fa-star text-yellow-400 cursor-pointer hover:text-yellow-500';
+                    } else {
+                        s.className = 'far fa-star text-yellow-400 cursor-pointer hover:text-yellow-500';
+                    }
+                });
+            });
+            
+            star.addEventListener('mouseout', () => {
+                const currentRating = parseInt(ratingInput.value);
+                
+                ratingStars.forEach((s, index) => {
+                    if (index < currentRating) {
+                        s.className = 'fas fa-star text-yellow-400 cursor-pointer';
+                    } else {
+                        s.className = 'far fa-star text-yellow-400 cursor-pointer';
+                    }
+                });
+            });
+        });
+
+        // Character counter
+        const messageInput = document.getElementById('message');
+        const charCounter = document.getElementById('charCounter');
+        
+        messageInput.addEventListener('input', () => {
+            const currentLength = messageInput.value.length;
+            charCounter.textContent = `${currentLength}/500`;
+            
+            if (currentLength > 400) {
+                charCounter.classList.add('text-yellow-500');
+            } else {
+                charCounter.classList.remove('text-yellow-500');
+            }
+            
+            if (currentLength > 450) {
+                charCounter.classList.add('text-red-500');
+            } else {
+                charCounter.classList.remove('text-red-500');
+            }
+        });
+
+        // Form submission
+        document.getElementById('reviewForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const message = document.getElementById('message').value.trim();
+            const rating = parseInt(document.getElementById('rating').value);
+            
+            // Validation
+            if (!name || !email || !message || rating === 0) {
+                showNotification('Please fill in all fields and provide a rating.', 'error');
+                return;
+            }
+            
+            // Show loading state
+            const submitBtn = document.getElementById('submitBtn');
+            const submitText = document.getElementById('submitText');
+            const loadingSpinner = document.getElementById('loadingSpinner');
+            
+            submitBtn.disabled = true;
+            submitText.classList.add('hidden');
+            loadingSpinner.classList.remove('hidden');
+            
+            const data = {
+                name: name,
+                email: email,
+                message: message,
+                rating: rating,
+                timestamp: new Date().toISOString()
+            };
+            
+            // Log data for debugging
+            console.log('Submitting data:', data);
+            
+            // Try the main endpoint first
+            submitReview(data, () => {
+                // Success - reset form and show notification
+                resetForm();
+                showNotification('Thank you! Your review has been submitted successfully.', 'success');
+                loadReviews();
+            }, (error) => {
+                // If main endpoint fails, try a backup endpoint
+                console.log('Main endpoint failed, trying backup endpoint...');
+                submitReview(data, () => {
+                    // Backup endpoint success
+                    resetForm();
+                    showNotification('Thank you! Your review has been submitted successfully.', 'success');
+                    loadReviews();
+                }, 'https://jsonplaceholder.typicode.com/posts', (backupError) => {
+                    // Both endpoints failed
+                    console.error('Both endpoints failed:', backupError);
+                    showNotification('Error! Please try again later.', 'error');
+                    resetForm();
+                });
+            });
+        });
+
+        function submitReview(data, successCallback, backupUrl = null, errorCallback = null) {
+            const url = backupUrl || 'https://script.google.com/macros/s/AKfycbwT2raxh4-t4B5Uv0JxS0g-4gcGRj-L4jwaWBG89_vXowq6hQTb6-F7UUsHlngRB7UKZQ/exec';
+            
+            fetch(, {
+                method: 'POST',
+                body: JSON.stringify(data),
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                mode: 'cors' // Enable CORS
+            })
+            .then(response => {
+                console.log('Response status:', response.status);
+                if (!response.ok) {
+                    console.error('Response not OK:', response.status, response.statusText);
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                return response.json();
+            })
+            .then(responseData => {
+                console.log('Response from server:', responseData);
+                successCallback();
+            })
+            .catch(error => {
+                console.error('Error during submission:', error);
+                if (backupUrl && errorCallback) {
+                    errorCallback(error);
+                } else if (backupUrl) {
+                    // If this was the main endpoint, try the backup
+                    submitReview(data, successCallback, backupUrl, errorCallback);
+                } else if (errorCallback) {
+                    errorCallback(error);
+                } else {
+                    console.error('No error callback provided');
+                }
+            });
+        }
+
+        function resetForm() {
+            const form = document.getElementById('reviewForm');
+            form.reset();
+            document.getElementById('rating').value = 0;
+            ratingStars.forEach(s => s.className = 'far fa-star text-yellow-400 cursor-pointer hover:text-yellow-500');
+            charCounter.textContent = '0/500';
+            charCounter.classList.remove('text-yellow-500', 'text-red-500');
+            
+            // Reset button state
+            const submitBtn = document.getElementById('submitBtn');
+            const submitText = document.getElementById('submitText');
+            const loadingSpinner = document.getElementById('loadingSpinner');
+            
+            submitBtn.disabled = false;
+            submitText.classList.remove('hidden');
+            loadingSpinner.classList.add('hidden');
+        }
+
+        function showNotification(message, type) {
+            const notification = document.createElement('div');
+            notification.className = `fixed top-4 right-4 px-6 py-4 rounded-lg shadow-lg z-50 ${
+                type === 'success' ? 'bg-green-500 text-white' : 'bg-red-500 text-white'
+            }`;
+            notification.innerHTML = `
+                <div class="flex items-center">
+                    <i class="fas ${type === 'success' ? 'fa-check-circle' : 'fa-exclamation-circle'} mr-2"></i>
+                    <span>${message}</span>
+                </div>
+            `;
+            document.body.appendChild(notification);
+            
+            setTimeout(() => {
+                notification.classList.add('opacity-0', 'transition-opacity', 'duration-500');
+                setTimeout(() => {
+                    notification.remove();
+                }, 500);
+            }, 5000);
+        }
+
+        // Load and display reviews
+        function loadReviews() {
+            const reviewList = document.getElementById('reviewList');
+            reviewList.innerHTML = `
+                <div class="text-center text-gray-500 py-12 col-span-full">
+                    <i class="fas fa-spinner fa-spin text-3xl mb-4"></i>
+                    <p>Loading reviews...</p>
+                </div>
+            `;
+            
+            fetch("https://script.google.com/macros/s/AKfycbxm-MfM_hmQIDHU6GwRJ90lOhdYJBDpKvLFWQ334fMfRB48vHDZpArMEKPuvxtwI-yaIA/exec")
+                .then(res => {
+                    if (!res.ok) {
+                        console.error('Failed to load reviews:', res.status, res.statusText);
+                        throw new Error(`HTTP error! status: ${res.status}`);
+                    }
+                    return res.json();
+                })
+                .then(data => {
+                    if (!data) {
+                        throw new Error('No data received');
+                    }
+                    
+                    reviewList.innerHTML = '';
+                    
+                    if (!data || data.length === 0) {
+                        reviewList.innerHTML = `
+                            <div class="col-span-full text-center py-12">
+                                <i class="fas fa-comment-slash text-gray-400 text-4xl mb-4"></i>
+                                <p class="text-gray-500">No reviews yet. Be the first to share your experience!</p>
+                            </div>
+                        `;
+                        return;
+                    }
+                    
+                    displayReviews(data);
+                })
+                .catch(error => {
+                    console.error('Error loading reviews:', error);
+                    reviewList.innerHTML = `
+                        <div class="col-span-full text-center py-12">
+                            <i class="fas fa-exclamation-triangle text-red-500 text-4xl mb-4"></i>
+                            <p class="text-red-500">Failed to load reviews. Please try again later.</p>
+                        </div>
+                    `;
+                });
+        }
+
+        // Display reviews with filtering and sorting
+        function displayReviews(reviews) {
+            const reviewList = document.getElementById('reviewList');
+            reviewList.innerHTML = '';
+            
+            const filterRating = document.getElementById('filterRating').value;
+            const sortOrder = document.getElementById('sortOrder').value;
+            
+            let filteredReviews = [...reviews];
+            
+            // Apply rating filter
+            if (filterRating !== 'all') {
+                filteredReviews = filteredReviews.filter(review => review.rating === parseInt(filterRating));
+            }
+            
+            // Apply sorting
+            filteredReviews.sort((a, b) => {
+                switch (sortOrder) {
+                    case 'newest':
+                        return new Date(b.timestamp) - new Date(a.timestamp);
+                    case 'oldest':
+                        return new Date(a.timestamp) - new Date(b.timestamp);
+                    case 'highest':
+                        return b.rating - a.rating;
+                    case 'lowest':
+                        return a.rating - b.rating;
+                    default:
+                        return new Date(b.timestamp) - new Date(a.timestamp);
+                }
+            });
+            
+            if (filteredReviews.length === 0) {
+                reviewList.innerHTML = `
+                    <div class="col-span-full text-center py-12">
+                        <i class="fas fa-filter text-gray-400 text-4xl mb-4"></i>
+                        <p class="text-gray-500">No reviews match your filter criteria.</p>
+                    </div>
+                `;
+                return;
+            }
+            
+            filteredReviews.forEach(review => {
+                const card = document.createElement('div');
+                card.className = "bg-white p-6 shadow-lg rounded-lg border border-gray-200 hover:shadow-xl transition duration-300";
+                
+                const date = new Date(review.timestamp);
+                const formattedDate = date.toLocaleDateString('en-US', {
+                    year: 'numeric',
+                    month: 'long',
+                    day: 'numeric'
+                });
+                
+                const stars = '★'.repeat(review.rating) + '☆'.repeat(5 - review.rating);
+                
+                card.innerHTML = `
+                    <div class="flex items-start mb-4">
+                        <div class="bg-blue-100 rounded-full p-3 mr-4">
+                            <i class="fas fa-user text-blue-600"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h4 class="font-bold text-lg text-blue-800">${review.name}</h4>
+                            <div class="flex items-center mt-1">
+                                <span class="text-yellow-500 mr-2">${stars}</span>
+                                <span class="text-sm text-gray-500">${formattedDate}</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4">"${review.message}"</p>
+                    <div class="text-sm text-gray-500 flex items-center">
+                        <i class="fas fa-envelope mr-2"></i>
+                        ${review.email}
+                    </div>
+                `;
+                
+                reviewList.appendChild(card);
+            });
+        }
+
+        // Filter and sort event listeners
+        document.getElementById('filterRating').addEventListener('change', loadReviews);
+        document.getElementById('sortOrder').addEventListener('change', loadReviews);
+
+        // Load reviews on page load
+        document.addEventListener('DOMContentLoaded', loadReviews);
+    </script>
+</body>
+</html>
+<!-- FAQ Section -->
+<section class="py-20 bg-white px-6">
+<div class="max-w-5xl mx-auto">
+<h3 class="text-3xl font-bold text-center text-blue-900 mb-12">Frequently Asked Questions</h3>
+
+<div class="space-y-4">
+<div class="border border-gray-200 rounded-lg overflow-hidden">
+<button class="flex justify-between items-center w-full p-4 text-left bg-gray-50 hover:bg-gray-100 transition-colors" onclick="toggleFaq(this)">
+<span class="font-semibold text-lg">What services do you offer for small businesses?</span>
+<i class="fas fa-chevron-down text-blue-600 transition-transform"></i>
+</button>
+<div class="p-4 bg-white hidden">
+<p class="text-gray-700">We offer comprehensive services for small businesses including bookkeeping, GST compliance, ITR filing, tax planning, and business advisory. Our services are designed to help small businesses stay compliant and focus on growth.</p>
+</div>
+</div>
+
+<div class="border border-gray-200 rounded-lg overflow-hidden">
+<button class="flex justify-between items-center w-full p-4 text-left bg-gray-50 hover:bg-gray-100 transition-colors" onclick="toggleFaq(this)">
+<span class="font-semibold text-lg">How much do your services cost?</span>
+<i class="fas fa-chevron-down text-blue-600 transition-transform"></i>
+</button>
+<div class="p-4 bg-white hidden">
+<p class="text-gray-700">Our pricing varies based on the services required and the complexity of your needs. We offer competitive rates and customized packages. Contact us for a free consultation and personalized quote.</p>
+</div>
+</div>
+
+<div class="border border-gray-200 rounded-lg overflow-hidden">
+<button class="flex justify-between items-center w-full p-4 text-left bg-gray-50 hover:bg-gray-100 transition-colors" onclick="toggleFaq(this)">
+<span class="font-semibold text-lg">How do I book an appointment?</span>
+<i class="fas fa-chevron-down text-blue-600 transition-transform"></i>
+</button>
+<div class="p-4 bg-white hidden">
+<p class="text-gray-700">You can book an appointment by calling us at +91 76379 20913, sending an email to gsconsultancy@example.com, or using our contact form on this website. We'll get back to you to schedule a convenient time.</p>
+</div>
+</div>
+
+<div class="border border-gray-200 rounded-lg overflow-hidden">
+<button class="flex justify-between items-center w-full p-4 text-left bg-gray-50 hover:bg-gray-100 transition-colors" onclick="toggleFaq(this)">
+<span class="font-semibold text-lg">What documents do I need for tax filing?</span>
+<i class="fas fa-chevron-down text-blue-600 transition-transform"></i>
+</button>
+<div class="p-4 bg-white hidden">
+<p class="text-gray-700">For tax filing, you'll typically need PAN details, bank statements, income details, proof of investments, rent receipts, Form 16 (if applicable), and any other relevant financial documents. We'll provide you with a detailed checklist after our initial consultation.</p>
+</div>
+</div>
+
+<div class="border border-gray-200 rounded-lg overflow-hidden">
+<button class="flex justify-between items-center w-full p-4 text-left bg-gray-50 hover:bg-gray-100 transition-colors" onclick="toggleFaq(this)">
+<span class="font-semibold text-lg">Do you provide services outside Tinsukia?</span>
+<i class="fas fa-chevron-down text-blue-600 transition-transform"></i>
+</button>
+<div class="p-4 bg-white hidden">
+<p class="text-gray-700">Yes, we provide services across Assam and Northeast India. For remote areas, we offer virtual consultations and can handle documentation online. We also have associates in major cities who can assist with on-site services when needed.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section Redesigned -->
+<section id="contact" class="py-20 bg-white px-6" data-aos="fade-up" data-aos-delay="300">
+<div class="max-w-7xl mx-auto">
+<h3 class="text-3xl font-bold text-blue-900 text-center mb-10">Get In Touch</h3>
+<div class="grid md:grid-cols-2 gap-10">
+<div>
+<div class="bg-blue-50 p-6 rounded-lg mb-6">
+<h4 class="text-xl font-semibold text-blue-800 mb-3">Visit Us</h4>
+<p class="mb-4">📍 NH 37, near Ram Mandir, Talap, Tinsukia, Assam</p>
+<p class="mb-4">📞 +91 76379 20913</p>
+<p class="mb-4">📧 gsconsultancy@example.com</p>
+<iframe
+src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14721.616734578717!2d95.5643482!3d27.6757195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDU0JzU0LjAiTiAxN8KwMTMnMC4zLjQi!5e0!3m2!1sen!2sin!4v1720567890123"
+width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+<div class="mt-4">
+<a href="https://www.google.com/maps/dir/?api=1&destination=27.6757,95.5643" target="_blank"
+class="inline-block bg-blue-600 text-white px-5 py-2 rounded hover:bg-blue-700">📍 Get Directions</a>
+</div>
+</div>
+<div class="bg-blue-50 p-6 rounded-lg">
+<h4 class="text-xl font-semibold text-blue-800 mb-3">Business Hours</h4>
+<div class="space-y-2">
+<div class="flex justify-between">
+<span>Monday - Friday:</span>
+<span>9:00 AM - 6:00 PM</span>
+</div>
+<div class="flex justify-between">
+<span>Saturday:</span>
+<span>10:00 AM - 2:00 PM</span>
+</div>
+<div class="flex justify-between">
+<span>Sunday:</span>
+<span>Closed</span>
+</div>
+</div>
+</div>
+</div>
+<form id="contactForm" class="space-y-4 bg-gray-50 p-6 rounded-lg shadow-md">
+<h4 class="text-xl font-semibold text-blue-800 mb-4">Send Us a Message</h4>
+<div class="space-y-2">
+<label for="name" class="block text-gray-700">Your Name</label>
+<input type="text" id="name" name="name" placeholder="Your Name" class="w-full p-3 border rounded focus:ring-2 focus:ring-blue-300 focus:border-blue-500 transition-all" required />
+</div>
+<div class="space-y-2">
+<label for="email" class="block text-gray-700">Your Email</label>
+<input type="email" id="email" name="email" placeholder="Your Email" class="w-full p-3 border rounded focus:ring-2 focus:ring-blue-300 focus:border-blue-500 transition-all" required />
+</div>
+<div class="space-y-2">
+<label for="phone" class="block text-gray-700">Phone Number</label>
+<input type="tel" id="phone" name="phone" placeholder="Your Phone Number" class="w-full p-3 border rounded focus:ring-2 focus:ring-blue-300 focus:border-blue-500 transition-all" required />
+</div>
+<div class="space-y-2">
+<label for="service" class="block text-gray-700">Service Needed</label>
+<select id="service" name="service" class="w-full p-3 border rounded focus:ring-2 focus:ring-blue-300 focus:border-blue-500 transition-all" required>
+<option value="">Select a service</option>
+<option value="accounting">Accounting & Bookkeeping</option>
+<option value="itrfiling">ITR Filing</option>
+<option value="gst">GST Services</option>
+<option value="tax">Tax Consultancy</option>
+<option value="project">Bank Project Reports</option>
+<option value="other">Other Services</option>
+</select>
+</div>
+<div class="space-y-2">
+<label for="message" class="block text-gray-700">Your Message</label>
+<textarea id="message" name="message" placeholder="Your Message" class="w-full p-3 border rounded h-32 focus:ring-2 focus:ring-blue-300 focus:border-blue-500 transition-all" required></textarea>
+</div>
+<button type="submit" class="w-full bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700 transition-colors">Send Message</button>
+</form>
+</div>
+</div>
+</section>
+<!-- Newsletter -->
+<section class="py-12 bg-blue-600 text-white">
+<div class="max-w-6xl mx-auto px-6 text-center">
+<h3 class="text-2xl font-bold mb-4">Subscribe to Our Newsletter</h3>
+<p class="mb-6 max-w-2xl mx-auto">Stay updated with the latest tax regulations, financial tips, and exclusive offers from GS Consultancy.</p>
+<div class="flex flex-col sm:flex-row gap-2 max-w-md mx-auto">
+<input type="email" placeholder="Your Email Address" class="flex-grow p-3 rounded-l sm:rounded-l-lg sm:rounded-r-none focus:outline-none text-gray-800" required>
+<button class="bg-white text-blue-600 px-6 py-3 rounded sm:rounded-r-lg hover:bg-gray-100 transition-colors font-medium">Subscribe</button>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-gray-800 text-white text-sm py-10">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid md:grid-cols-4 gap-8 mb-8">
+<div>
+<div class="flex items-center gap-2 mb-4">
+<img src="https://picsum.photos/seed/gslogo/40/40.jpg" alt="GS Consultancy Logo" class="w-10 h-10 rounded-full">
+<h4 class="text-lg font-bold text-blue-400">GS Consultancy</h4>
+</div>
+<p class="mb-4 text-gray-400">Professional accounting and tax services in Tinsukia and Northeast India.</p>
+<div class="flex gap-4 mb-4">
+<a href="#" class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-facebook-f"></i></a>
+<a href="#" class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-twitter"></i></a>
+<a href="#" class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-linkedin-in"></i></a>
+<a href="#" class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-instagram"></i></a>
+</div>
+<p class="text-gray-400">© 2025 GS Consultancy. All rights reserved.</p>
+</div>
+<div>
+<h5 class="font-semibold text-lg mb-4 text-blue-400">Quick Links</h5>
+<ul class="space-y-2">
+<li><a href="#home" class="text-gray-400 hover:text-white transition-colors">Home</a></li>
+<li><a href="#about" class="text-gray-400 hover:text-white transition-colors">About Us</a></li>
+<li><a href="#services" class="text-gray-400 hover:text-white transition-colors">Services</a></li>
+<li><a href="#team" class="text-gray-400 hover:text-white transition-colors">Our Team</a></li>
+<li><a href="#testimonials" class="text-gray-400 hover:text-white transition-colors">Testimonials</a></li>
+<li><a href="#contact" class="text-gray-400 hover:text-white transition-colors">Contact Us</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-semibold text-lg mb-4 text-blue-400">Our Services</h5>
+<ul class="space-y-2">
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Accounting & Bookkeeping</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">ITR Filing</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">GST Services</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Tax Consultancy</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Bank Project Reports</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Business Setup</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-semibold text-lg mb-4 text-blue-400">Contact Info</h5>
+<ul class="space-y-3">
+<li class="flex items-start gap-3">
+<i class="fas fa-map-marker-alt text-blue-400 mt-1"></i>
+<span>NH 37, near Ram Mandir, Talap, Tinsukia, Assam</span>
+</li>
+<li class="flex items-start gap-3">
+<i class="fas fa-phone-alt text-blue-400 mt-1"></i>
+<span>+91 76379 20913</span>
+</li>
+<li class="flex items-start gap-3">
+<i class="fas fa-envelope text-blue-400 mt-1"></i>
+<span>gsconsultancy@example.com</span>
+</li>
+<li class="flex items-start gap-3">
+<i class="fas fa-clock text-blue-400 mt-1"></i>
+<span>Mon-Fri: 10AM-6PM, Sat: 10AM-6PM</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="border-t border-gray-700 pt-6 flex flex-col md:flex-row justify-between items-center">
+<p class="text-gray-400 text-sm mb-4 md:mb-0">GS Consultancy | All Rights Reserved</p>
+<div class="flex gap-6">
+<a href="#" class="text-gray-400 hover:text-white transition-colors">Privacy Policy</a>
+<a href="#" class="text-gray-400 hover:text-white transition-colors">Terms of Service</a>
+<a href="#" class="text-gray-400 hover:text-white transition-colors">Sitemap</a>
+</div>
+</div>
+</div>
+</footer>
+<!-- Success Message Modal -->
+<div id="successModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden modal">
+<div class="bg-white p-8 rounded-lg max-w-md w-full">
+<div class="text-center">
+<div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-green-100 text-green-500 mb-4">
+<i class="fas fa-check-circle text-2xl"></i>
+</div>
+<h3 class="text-xl font-bold text-gray-900 mb-2">Message Sent Successfully!</h3>
+<p class="text-gray-600 mb-6">Thank you for reaching out. We'll get back to you soon.</p>
+<button id="closeModal" class="bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition-colors">Close</button>
+</div>
+</div>
+</div>
+<!-- Back to Top Button -->
+<a href="#" id="backToTop" class="fixed bottom-20 right-6 bg-blue-600 text-white px-4 py- rounded-full shadow-lg hover:bg-blue-700 transition-colors z-50 back-to-top">⬆️</a>
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+<script>
+// Initialize AOS
+AOS.init({
+duration: 800,
+easing: 'ease-in-out',
+once: true,
+mirror: false
+});
+
+// Preloader
+window.addEventListener('load', function() {
+const preloader = document.getElementById('preloader');
+setTimeout(function() {
+preloader.style.opacity = '0';
+setTimeout(function() {
+preloader.style.display = 'none';
+}, 300);
+}, 500);
+});
+
+// Mobile Menu Toggle
+const menuToggle = document.getElementById('menu-toggle');
+const mobileMenu = document.getElementById('mobile-menu');
+
+menuToggle.addEventListener('click', function() {
+mobileMenu.classList.toggle('hidden');
+});
+
+// Navbar Scroll Effect
+const navbar = document.getElementById('navbar');
+window.addEventListener('scroll', function() {
+if (window.scrollY > 50) {
+navbar.classList.add('bg-white', 'shadow-md');
+navbar.classList.remove('bg-transparent');
+} else {
+navbar.classList.remove('shadow-md');
+}
+});
+
+// FAQ Toggle
+function toggleFaq(button) {
+const content = button.nextElementSibling;
+const icon = button.querySelector('i');
+
+if (content.classList.contains('hidden')) {
+content.classList.remove('hidden');
+icon.classList.add('fa-chevron-up');
+icon.classList.remove('fa-chevron-down');
+} else {
+content.classList.add('hidden');
+icon.classList.remove('fa-chevron-up');
+icon.classList.add('fa-chevron-down');
+}
+}
+
+// Service Tabs
+const tabButtons = document.querySelectorAll('.service-tab');
+
+tabButtons.forEach(button => {
+button.addEventListener('click', function() {
+// Remove active class from all tabs
+tabButtons.forEach(tab => {
+tab.classList.remove('active', 'bg-blue-600', 'text-white');
+tab.classList.add('bg-white', 'text-gray-700');
+});
+
+// Add active class to clicked tab
+this.classList.add('active', 'bg-blue-600', 'text-white');
+this.classList.remove('bg-white', 'text-gray-700');
+
+// Hide all tab content
+const tabContents = document.querySelectorAll('.tab-content');
+tabContents.forEach(content => {
+content.classList.remove('active');
+});
+
+// Show corresponding tab content
+const tabId = this.getAttribute('data-tab');
+document.getElementById(tabId).classList.add('active');
+});
+});
+
+// Form Submission
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+e.preventDefault();
+
+// Get form values
+const name = document.getElementById('name').value;
+const email = document.getElementById('email').value;
+const phone = document.getElementById('phone').value;
+const service = document.getElementById('service').value;
+const message = document.getElementById('message').value;
+
+// Simple validation
+if (!name || !email || !phone || !service || !message) {
+alert('Please fill in all fields');
+return;
+}
+
+// Email validation
+const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+if (!emailRegex.test(email)) {
+alert('Please enter a valid email address');
+return;
+}
+
+// In a real implementation, you would send this data to your server
+// For this example, we'll simulate sending the email
+console.log('Form submitted:', { name, email, phone, service, message });
+
+// Show success message
+const successModal = document.getElementById('successModal');
+successModal.classList.remove('hidden');
+
+// Reset form
+document.getElementById('contactForm').reset();
+});
+
+// Close Modal
+document.getElementById('closeModal').addEventListener('click', function() {
+const successModal = document.getElementById('successModal');
+successModal.classList.add('hidden');
+});
+
+// Close modal when clicking outside
+document.getElementById('successModal').addEventListener('click', function(e) {
+if (e.target === this) {
+this.classList.add('hidden');
+}
+});
+
+// Back to Top Button
+const backToTop = document.getElementById('backToTop');
+
+window.addEventListener('scroll', function() {
+if (window.scrollY > 300) {
+backToTop.classList.add('visible');
+} else {
+backToTop.classList.remove('visible');
+}
+});
+
+backToTop.addEventListener('click', function(e) {
+e.preventDefault();
+window.scrollTo({
+top: 0,
+behavior: 'smooth'
+});
+});
+
+// Newsletter Form
+const newsletterForm = document.querySelector('section.py-12.bg-blue-600 input[type="email"]').parentElement;
+
+if (newsletterForm) {
+newsletterForm.addEventListener('click', function() {
+const emailInput = this.querySelector('input[type="email"]');
+const button = this.querySelector('button');
+
+if (emailInput.value && emailInput.value.includes('@')) {
+// In a real implementation, you would send this data to your server
+console.log('Newsletter subscription:', emailInput.value);
+
+// Show success message
+const successModal = document.getElementById('successModal');
+successModal.querySelector('h3').textContent = 'Subscription Successful!';
+successModal.querySelector('p').textContent = 'Thank you for subscribing to our newsletter. You will receive our latest updates soon.';
+successModal.classList.remove('hidden');
+
+// Reset input
+emailInput.value = '';
+} else {
+alert('Please enter a valid email address');
+}
+});
+}
+</script>
+
+</body>
+</html>
